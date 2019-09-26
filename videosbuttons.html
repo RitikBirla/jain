@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div style="text-align:center">
+	<button onclick="playpPause()">play/pause</button>
+	<button onclick="makeBig()">Big</button>
+	<button onclick="makeSmall()">Small</button>
+	<button onclick="makeNormal()">Normal</button>
+	<br><br><br>
+
+	<video id="video11" width="500">
+		<source src="C:\Users\varun jain\Documents\DCIM\Camera\movie.mp4" type="video/mp4">
+
+	</video>
+	</div>
+<script type="text/javascript">
+	var myvideo=document.getElementById('video11')
+
+	function playPause() {
+		if (myvideo.paused)
+			myvideo.play();
+		else
+			myvideo.pause();
+	}
+
+	function makeBig() {
+		myvideo.width= 600
+		// body...
+	}
+	function makeSmall() {
+		myvideo.width= 200
+		// body...
+	}
+
+	function makeNormal() {
+		myvideo.width=300
+		// body...
+	}
+</script>
+</body>
+</html>
